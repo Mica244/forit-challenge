@@ -1,0 +1,43 @@
+.footer {
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    display: block; 
+}
+
+.footer-content {
+    background: linear-gradient(-45deg, #6c63ff, #ff6584, #43aa8b, #f9844a);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    width: 100%;
+    padding: 12px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-radius: 0;
+}
+
+.footer-name {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}

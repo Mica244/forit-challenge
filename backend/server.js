@@ -16,7 +16,14 @@ let tasks = []
 app.get('/api/tasks', (req, res) => {
     res.json(tasks)
 })
-
+app.get('/api/tasks/:id', (req, res) => {
+    const { id } = req.params
+    const task = tasks.find(t => t.id === id)
+    if (!task) {
+        return res.status(404).json({ error: 'Tarea no encontrada' })
+    }
+    res.json(task)
+})
 app.post('/api/tasks', (req, res) => {
     const { title, description } = req.body
     if (!title) {

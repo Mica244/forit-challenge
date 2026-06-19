@@ -1,0 +1,91 @@
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #6c63ff, #ff6584, #43aa8b, #f9844a);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.form-card h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-card input,
+.form-card textarea {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    color: white;
+    padding: 12px 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    border-color: white;
+    background: rgba(255,255,255,0.3);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: white;
+    color: #6c63ff;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.btn-back {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 0;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.btn-back:hover {
+    opacity: 1;
+}
