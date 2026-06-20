@@ -41,7 +41,7 @@ VITE_API_URL=http://localhost:3000
 (./screenshots/cap2.png)
 (./screenshots/cap3.png)
 
-#Desrrollado por Micaela Pincevic
+#Desarrollado por Micaela Pincevic
 
 
 
