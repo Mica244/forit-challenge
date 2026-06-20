@@ -37,11 +37,11 @@ npm run dev
 **frontend/.env**
 VITE_API_URL=http://localhost:3000
 
-(./screenshots/cap1.png)
-(./screenshots/cap2.png)
-(./screenshots/cap3.png)
+![Screenshot 1](screenshots/cap1.png)
+![Screenshot 2](screenshots/cap2.png)
+![Screenshot 3](screenshots/cap3.png)
 
-#Desrrollado por Micaela Pincevic
+#Desarrollado por Micaela Pincevic
 
 
 
