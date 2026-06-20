@@ -5,6 +5,7 @@ import './TaskForm.css'
 function TaskForm (){
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
+    const [error, setError] = useState('')
     const navigate = useNavigate()
     const { id } = useParams()
 
@@ -20,6 +21,15 @@ function TaskForm (){
 
     const handleSubmit = async(e) => {
         e.preventDefault()
+        if (!title.trim()){
+            setError('El titulo es obligatorio')
+            return
+        }
+        if (title.trim().length < 3){
+            setError('El titulo debe tener al menos 3 caracteres')
+            return
+        }
+        setError('')
         if(id){
             await fetch(import.meta.env.VITE_API_URL + '/api/tasks/' + id,{
                 method: 'PUT',
@@ -54,6 +64,7 @@ function TaskForm (){
                         value={title} 
                         onChange={(e) => setTitle(e.target.value)} 
                     />
+                    {error && <p style={{color:'#000000', fontSize:'0.85rem', marginTop:'-10px', marginBottom:'10px'}}>{error}</p>}
                     <textarea 
                         rows="4" 
                         placeholder="Descripción"

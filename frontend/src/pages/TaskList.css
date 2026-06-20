@@ -77,3 +77,58 @@
 .card-section {
     margin-top: 40px;
 }
+.search-filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px 0 40px;
+    flex-wrap: wrap;
+}
+
+.search-filter input {
+    max-width: 300px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-buttons button {
+    background: #f0f0f0;
+    color: #555;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+.filter-buttons button.active {
+    background: #6c63ff;
+    color: white;
+}
+
+.filter-buttons button:hover {
+    background: #6c63ff;
+    color: white;
+}
+
+.task-counter {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.task-counter span {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+}
